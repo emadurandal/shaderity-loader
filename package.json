@@ -5,7 +5,6 @@
   "repository": "https://github.com/emadurandal/shaderity.git",
   "author": "Yuki Shimada <emadurandal@gmail.com>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "build-test": "npx webpack --config ./test/webpack.config.js",
     "test": "yarn test-unit",
