@@ -49,6 +49,10 @@ function shaderStage(loader) {
   }
 }
 
+function requireFile(str) {
+  
+}
+
 module.exports = function(source, map, meta) {
   this.cacheable();
 
@@ -56,7 +60,7 @@ module.exports = function(source, map, meta) {
 
   const options = loaderUtils.getOptions(this);
 
-  json.code = transform(source, this);
+  json.code = source;
 
   json.shaderStage = shaderStage(this);
 

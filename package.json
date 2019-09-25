@@ -5,17 +5,15 @@
   "repository": "https://github.com/emadurandal/shaderity.git",
   "author": "Yuki Shimada <emadurandal@gmail.com>",
   "license": "MIT",
-  "private": true,
   "scripts": {
+    "build-test": "npx webpack --config ./test/webpack.config.js",
     "test": "yarn test-unit",
     "test-unit": "jest --config jest.config.js ./test"
   },
   "devDependencies": {
     "jest": "^24.8.0",
     "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.4",
-    "webpack-merge": "^4.2.1"
+    "webpack-cli": "^3.3.4"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
