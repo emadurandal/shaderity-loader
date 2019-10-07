@@ -49,8 +49,14 @@ function shaderStage(loader) {
   }
 }
 
-function requireFile(str) {
-  
+function requireFile(source) {
+  var arr = source.split(/\r\n|\n/);
+
+  for (var i = 0; i < arr.length; i++){
+    const row = arr[i];
+    console.log(row.match(/#pragma[\t ]+shaderity:[\t ]*(\S+)[\t ]*=[\t ]*require\([\t ]*(\S+)[\t ]*\)/));
+    // console.log(row)
+  }
 }
 
 module.exports = function(source, map, meta) {
@@ -59,6 +65,8 @@ module.exports = function(source, map, meta) {
   const json = {};
 
   const options = loaderUtils.getOptions(this);
+
+  requireFile(source);
 
   json.code = source;
 
