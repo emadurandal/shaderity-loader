@@ -1,8 +1,5 @@
 import simpleFragmentShader from '../fixtures/simple.frag';
-
-export default function simpleFragment() {
-  return simpleFragmentShader;
-}
+import outputFragmentShader from '../fixtures/output_test.frag';
 
 exports.simpleFragment = simpleFragmentShader;
-
+exports.outputFragment = outputFragmentShader;
