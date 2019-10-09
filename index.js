@@ -56,7 +56,8 @@ function requireFile(source, resourcePath) {
   const newArr = [];
   for (let i = 0; i < arr.length; i++){
     const row = arr[i];
-    const match = row.match(/#pragma[\t ]+shaderity:[\t ]*(\S+)[\t ]*=[\t ]*require\([\t ]*(\S+)[\t ]*\)/);
+    const match = row.match(/#pragma[\t ]+shaderity:[\t ]*(\S*)[\t ]*=?[\t ]*require\([\t ]*(\S+)[\t ]*\)/);
+    console.log(match)
     if (match != null) {
       const filePathSplit = match[2].split('/');
       const fileName = filePathSplit[filePathSplit.length - 1];
