@@ -82,8 +82,6 @@ module.exports = function(source, map, meta) {
 
   json.code = requireFile(source, this.resourcePath);
 
-  console.log(json.code)
-
   json.shaderStage = shaderStage(this);
 
   return `export default ${JSON.stringify(json)}`;
