@@ -1,5 +1,6 @@
 const loaderUtils = require('loader-utils');
 const fs = require('fs');
+const path = require('path');
 
 
 function isVertexShader(path) {
@@ -50,7 +51,7 @@ function shaderStage(loader) {
 }
 
 function requireFile(source, resourcePath) {
-  const basePath = resourcePath.substring(0, resourcePath.lastIndexOf('/')) + '/';
+  const basePath = path.dirname(resourcePath) + '/';
   const arr = source.split(/\r\n|\n/);
 
   const newArr = [];
@@ -58,9 +59,7 @@ function requireFile(source, resourcePath) {
     const row = arr[i];
     const match = row.match(/#pragma[\t ]+shaderity:[\t ]*(\S*)[\t ]*=?[\t ]*require\([\t ]*(\S+)[\t ]*\)/);
     if (match != null) {
-      const filePathSplit = match[2].split('/');
-      const fileName = filePathSplit[filePathSplit.length - 1];
-      const filePath = basePath + fileName;
+      const filePath = path.resolve(basePath + match[2]);
       let extShader = fs.readFileSync(filePath, {encoding: 'utf-8'});
       newArr.push(extShader);
     } else {
