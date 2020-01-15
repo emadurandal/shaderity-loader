@@ -1,6 +1,6 @@
 {
   "name": "shaderity-loader",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "index.js",
   "repository": "https://github.com/emadurandal/shaderity.git",
   "author": "Yuki Shimada <emadurandal@gmail.com>",
