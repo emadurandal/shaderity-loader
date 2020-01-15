@@ -59,7 +59,7 @@ function requireFile(source, resourcePath) {
     const row = arr[i];
     const match = row.match(/^(?![\/])[\t ]*#pragma[\t ]+shaderity:[\t ]*(\S*)[\t ]*=?[\t ]*require\([\t ]*(\S+)[\t ]*\)/);
     if (match != null) {
-      const filePath = path.resolve(basePath + match[3]);
+      const filePath = path.resolve(basePath + match[2]);
       let extShader = fs.readFileSync(filePath, {encoding: 'utf-8'});
       newArr.push(extShader);
     } else {
