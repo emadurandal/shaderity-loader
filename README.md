@@ -9,7 +9,7 @@ shaderity-loader is a static GLSL shader loader for Webpack.
 With this `shaderity-loader`, you can do the following things:
 
 - Provide `#include` like statement for GLSL shader files. (similar syntax to glslify)
-- Embed GLSL shader files into TypeScript/JavaScript with WebPack Loader.
+- Embed GLSL shader files into TypeScript/JavaScript as a WebPack Loader.
 - Can be used in conjunction with glslify.
 
 ### Runtime features
