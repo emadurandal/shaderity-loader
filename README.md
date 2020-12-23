@@ -1,14 +1,17 @@
 # shaderity-loader
 
-shaderity-loader is a GLSL shader loader for Webpack.
+shaderity-loader is a static GLSL shader loader for Webpack.
 
 ## Features
 
+### Static features
 - Provide `#include` like statement for GLSL shader files. (similar syntax to glslify)
-- Transpile between GLSL ES 1.0 and GLSL ES 3.0 .
-- Embed GLSL shader files into TypeScript/JavaScript with WebPack Loader. (see [shaderity-loader](https://github.com/actnwit/shaderity))
-- Variables fill-in to GLSL code in runtime.
+- Embed GLSL shader files into TypeScript/JavaScript with WebPack Loader.
 - Can be used in conjunction with glslify.
+
+### Runtime features
+- Variables fill-in to GLSL code in runtime. (use [Shaderity](https://github.com/actnwit/shaderity) to do this)
+- Transpile between GLSL ES 1.0 and GLSL ES 3.0 . (use [Shaderity](https://github.com/actnwit/shaderity) to do this)
 
 ## How to use
 
