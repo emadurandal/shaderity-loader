@@ -1,0 +1,3 @@
+[submodule "shaderity-node"]
+	path = shaderity-node
+	url = https://github.com/actnwit/shaderity-node.git
