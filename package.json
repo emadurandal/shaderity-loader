@@ -1,6 +1,6 @@
 {
   "name": "shaderity-loader",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "index.js",
   "repository": "https://github.com/emadurandal/shaderity.git",
   "author": "Yuki Shimada <emadurandal@gmail.com>",
@@ -8,14 +8,20 @@
   "scripts": {
     "build-test": "npx webpack --config ./test/webpack.config.js",
     "test": "yarn test-unit",
-    "test-unit": "jest --config jest.config.js ./test"
+    "test-unit": "jest --config jest.config.js ./test",
+    "prepare-deps": "npm --prefix ./shaderity-node install",
+    "setup": "npm run _build-deps ; npm run _reinstall-deps",
+    "_build-deps": "npm --prefix ./shaderity-node run yarn-pack",
+    "_reinstall-deps": "npx shx rm -rf ./node_modules/shaderity-node && yarn cache clean && yarn add ./shaderity-node/shaderity-node-tmp.tgz"
   },
   "devDependencies": {
+    "highlight.js": "10.4.1",
     "jest": "^24.8.0",
+    "shx": "^0.3.3",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.4"
   },
   "dependencies": {
-    "shaderity-node": "0.0.4"
+    "shaderity-node": "0.0.5"
   }
 }
