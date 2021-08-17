@@ -1,4 +1,3 @@
-const loaderUtils = require('loader-utils');
 const requireFile = require("shaderity-node").requireFile;
 const shaderStage = require("shaderity-node").shaderStage;
 
