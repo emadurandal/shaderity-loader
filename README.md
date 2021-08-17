@@ -88,6 +88,9 @@ import shaderObj from '../fixtures/output_test.frag';
 console.out(convertedObj.shaderStage);
 // 'fragment'
 
+console.out(convertedObj.isFragmentShader);
+// 'true'
+
 console.out(convertedObj.code);
 /*
 precision mediump float;
