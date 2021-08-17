@@ -1,14 +1,18 @@
 const requireFile = require("shaderity-node").requireFile;
-const shaderStage = require("shaderity-node").shaderStage;
+const getShaderStage = require("shaderity-node").shaderStage;
 
 module.exports = function(source, map, meta) {
   this.cacheable();
 
-  const json = {};
+  const code = requireFile(source, this.resourcePath);
+  const shaderStage = getShaderStage(this.resourcePath);
+  const isFragmentShader = shaderStage === 'fragment';
 
-  json.code = requireFile(source, this.resourcePath);
-
-  json.shaderStage = shaderStage(this.resourcePath);
+  const json = {
+    code,
+    shaderStage,
+    isFragmentShader,
+  };
 
   return `export default ${JSON.stringify(json)}`;
 };
