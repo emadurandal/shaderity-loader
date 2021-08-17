@@ -7,8 +7,6 @@ module.exports = function(source, map, meta) {
 
   const json = {};
 
-  const options = loaderUtils.getOptions(this);
-
   json.code = requireFile(source, this.resourcePath);
 
   json.shaderStage = shaderStage(this.resourcePath);
