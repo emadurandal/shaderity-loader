@@ -1,4 +1,3 @@
-const loaderUtils = require('loader-utils');
 const requireFile = require("shaderity-node").requireFile;
 const shaderStage = require("shaderity-node").shaderStage;
 
@@ -6,8 +5,6 @@ module.exports = function(source, map, meta) {
   this.cacheable();
 
   const json = {};
-
-  const options = loaderUtils.getOptions(this);
 
   json.code = requireFile(source, this.resourcePath);
 
