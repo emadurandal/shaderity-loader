@@ -113,6 +113,13 @@ Build this JavaScript code using Webpack.
 $ webpack
 ```
 
+## For developers
+When developing this library, please make sure to merge it into the develop branch. In order to be able to work closely with shaderity-node, the develop branch is also a submodule of shaderity-node and is included in the dependencies.
+
+The only difference between the master branch and the develop branch is whether 'shaderity-node' is included as a submodule or not.
+
+When you publish this library, merge the code from the develop branch into the master branch. Make sure that the master branch does not have shaderity-node as a submodule, and that the version of the shaderity-node package in package.json is the version you intend.
+
 ## LICENSE
 
 MIT License
