@@ -2,6 +2,17 @@
 
 shaderity-loader is a static GLSL shader loader for Webpack.
 
+## About Shaderity series
+
+Shaderity is a shader toolkit composed from:
+
+- [shaderity](https://github.com/actnwit/shaderity): This. for runtime features
+  - shaderity-loader: for static features
+    - [shaderity-node](https://github.com/actnwit/shaderity-node): The internal component for shaderity-loader.
+
+
+The name "Shaderity" was coined from the combination of "Shader" and "Integrity".
+
 ## Features
 
 ### Static features
