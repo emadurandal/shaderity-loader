@@ -4093,10 +4093,10 @@ sha.js@^2.4.0, sha.js@^2.4.8:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-shaderity-node@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/shaderity-node/-/shaderity-node-0.0.5.tgz#5ce9e1adb3d1357a67ae63c7494659351ee367dd"
-  integrity sha512-xAu9TxoprgfikPm5HKpsaG5M/EP0xeHWUOepOaIbDxwRyBhnDRj6VdlLH8bYVOOWh9CbsXz37aKgteCw+h2H4A==
+shaderity-node@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/shaderity-node/-/shaderity-node-0.0.6.tgz#4da236be537978442c77898116c2a06c5ffc1dda"
+  integrity sha512-SBN7sLsDPzq/IGna/d8PFuOU8PxfSIgmue9q6B5OxZUQCmOKkEFReMFadD7QtCWaaoizLGlsFeoVIHWvtOm6kw==
 
 shebang-command@^1.2.0:
   version "1.2.0"
