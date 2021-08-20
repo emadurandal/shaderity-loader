@@ -12,7 +12,8 @@
     "prepare-deps": "npm --prefix ./shaderity-node install",
     "setup": "npm run _build-deps ; npm run _reinstall-deps",
     "_build-deps": "npm --prefix ./shaderity-node run yarn-pack",
-    "_reinstall-deps": "npx shx rm -rf ./node_modules/shaderity-node && yarn cache clean && yarn add ./shaderity-node/shaderity-node-tmp.tgz"
+    "_reinstall-deps": "npx shx rm -rf ./node_modules/shaderity-node && yarn cache clean && yarn add ./shaderity-node/shaderity-node-tmp.tgz",
+    "setup-submodule": "git submodule update --init"
   },
   "devDependencies": {
     "highlight.js": "10.4.1",
