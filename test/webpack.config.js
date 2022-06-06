@@ -24,6 +24,5 @@ module.exports = {
     filename: 'index.js',
   },
   optimization: {
-    namedChunks: true
   }
 };
