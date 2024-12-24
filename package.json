@@ -16,14 +16,14 @@
     "setup-submodule": "git submodule update --init"
   },
   "devDependencies": {
+    "glob-parent": "^6.0.2",
     "jest": "^28.1.0",
     "minimist": "^1.2.6",
     "shx": "^0.3.4",
     "webpack": "^4.33.0",
-    "glob-parent": "^6.0.2",
     "webpack-cli": "^3.3.4"
   },
   "dependencies": {
-    "shaderity-node": "0.0.7"
+    "shaderity-node": "0.0.8"
   }
 }

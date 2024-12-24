@@ -3816,10 +3816,10 @@ sha.js@^2.4.0, sha.js@^2.4.8:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-shaderity-node@0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/shaderity-node/-/shaderity-node-0.0.7.tgz#266bed366b124078e3f776723540c8552c6febf0"
-  integrity sha512-XJY22VjkiQBYYBcMQ1lv8Rq0DNbYjHUrNCyViy30swAih0sE+T7jaz3kPTi+hlU2eWeSutqlSEu9kpt+QX0mmg==
+shaderity-node@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/shaderity-node/-/shaderity-node-0.0.8.tgz#e49cb5d1e26113ad8a0c3641fc2de8c3cc577f8e"
+  integrity sha512-vIp4C3/seIm8AoZGaPd8zohIIhzcNY7MLB4cL4MS59x/6v3FBT5C6LaHRa9g56iD6hr9ZO5tAGV4k9dKFjJpKg==
 
 shebang-command@^1.2.0:
   version "1.2.0"
